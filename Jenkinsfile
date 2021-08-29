@@ -16,7 +16,7 @@ stages {
      {
 	steps
 	{
-		sh 'cd /home/ubuntu; sudo mkdir testfolder3'
+		sh 'cd /home/ubuntu; sudo mkdir testfolder'
 	}
 }
  stage('creating the folder on different server')
@@ -24,7 +24,7 @@ stages {
 	steps {
 		label ('my slave')
 	
-	    sh 'cd /home/ubuntu; sudo mkdir jenkins2'
+	    sh 'cd /home/ubuntu; sudo mkdir jenkins'
 		}
 	}
 }
