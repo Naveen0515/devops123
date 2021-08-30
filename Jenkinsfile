@@ -22,7 +22,7 @@ stages {
  stage('creating the folder on different server')
     {
 	steps {
-		label ('my slave')
+		label ('slave')
 	
 	    sh 'cd /home/ubuntu; sudo mkdir jenkins'
 		}
