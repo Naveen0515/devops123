@@ -16,7 +16,7 @@ stages {
      {
 	steps
 	{
-		sh 'cd /home/ubuntu; sudo mkdir testfolder11'
+		sh 'cd /home/ubuntu; sudo mkdir yadav1'
 	}
 }
  stage('creating the folder on different server')
@@ -24,7 +24,7 @@ stages {
 	steps {
 		label ('node2')
 	
-	    sh 'cd /home/ubuntu; sudo mkdir jenkins11'
+	    sh 'cd /home/ubuntu; sudo mkdir naveen15'
 		}
 	}
 }
