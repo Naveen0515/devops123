@@ -1,0 +1,35 @@
+  pipeline {
+  agent {
+  label 'slave1'
+  }
+
+  stages {
+
+  stage ('Checkout')
+  {
+  steps
+    {
+	
+	    checkout scm
+		
+	}
+	
+  }
+  stage ('Creation of the folder ')
+  {
+    steps
+	{
+	   sh "cd/home/ubuntu ; sudo mkdir trstfolder"
+	}
+  }	
+  
+  
+  stage ('Creating reating the folder on differen server ')
+      {
+	  steps {
+	      node (' ansible-server'){
+		  
+		  sh "cd /var/www; sudo mkdir devopsjenkins"
+          }
+  }
+     
