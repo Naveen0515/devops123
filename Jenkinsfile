@@ -2,7 +2,7 @@ pipeline {
    // agent defines where the pipeline will run.
    agent {
        //Here we define that we wish to run on the agent with the label Node
-   label "node12"
+   label "node124"
 }
 stages {
  stage('Declarative Checkout SCM')
